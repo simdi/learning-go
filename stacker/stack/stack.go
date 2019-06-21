@@ -36,7 +36,7 @@ func (stack *Stack) Push(x interface{}) {
 }
 
 /*Top method takes a Stack,
-* and returns the last item in the stack if it exists.
+* and returns the item at the top of stack if it exists.
 * @param: Stack
 * @output: (interface{}, error)
  */
