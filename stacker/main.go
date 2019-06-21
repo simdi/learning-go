@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/simdi/firstproject/stacker/stack"
+	"github.com/simdi/learning-go/stacker/stack"
 )
 
 func main() {

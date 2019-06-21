@@ -2,12 +2,17 @@ package stack
 
 import (
 	"errors"
+	"fmt"
 )
 
 type Stack []interface{}
 
 func (stack Stack) len() int {
 	return len(stack)
+}
+
+func (stack Stack) cap() int {
+	return cap(stack)
 }
 
 func (stack *Stack) Push(x interface{}) {
@@ -22,6 +27,7 @@ func (stack Stack) Top() (interface{}, error) {
 }
 
 func (stack *Stack) Pop() (interface{}, error) {
+	fmt.Println("Capacity", cap(*stack))
 	theStack := *stack
 	if len(theStack) == 0 {
 		return nil, errors.New("can't Pop() an empty stack")
