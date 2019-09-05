@@ -51,14 +51,30 @@ func main() {
 	*	GG
 	*	G
 	 */
-	for i := 0; i < 10; i++ {
-		for j := 0; j < 10; j++ {
-			if i > j {
-				fmt.Print("G")
-			} else {
-				fmt.Print(" ")
-			}
-		}
-		fmt.Print("\n")
+	// for i := 0; i < 10; i++ {
+	// 	for j := 0; j < 10; j++ {
+	// 		if i > j {
+	// 			fmt.Print("G")
+	// 		} else {
+	// 			fmt.Print(" ")
+	// 		}
+	// 	}
+	// 	fmt.Print("\n")
+	// }
+
+	/*
+	* Try modifying a value in the for range loop
+	* For range
+	 */
+	names := []string{"John", "Doe", "James", "Bond"}
+	// for i, v := range names {
+	// 	// You can't change v in a for range.
+	// 	v = "Changed Doe"
+	// 	fmt.Printf("Index: %d, Value: %s, Type: %T\n", i, v, v)
+	// }
+	for i := 0; i < len(names); i++ {
+		names[i] = "Changes value"
+		fmt.Printf("Index: %d", i)
 	}
+	fmt.Print("Names", names)
 }
