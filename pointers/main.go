@@ -11,6 +11,15 @@ func changeTheValueOfAPointer(value *int) {
 	fmt.Printf("This pointer is of type %T\n", value)
 }
 
+// Indirectly modify parameter.
+// This is not ideal.
+func changeValueLocally(val int) int {
+	fmt.Printf("The original value is: %d\n", val)
+	b := &val
+	*b = 6
+	return val
+}
+
 func main() {
 	b := 100
 	a := &b
@@ -35,4 +44,7 @@ func main() {
 	}
 
 	fmt.Println("usage", filepath.Base(os.Args[0]))
+
+	val := 5
+	fmt.Printf("Changed value is: %d\n", changeValueLocally(val))
 }
