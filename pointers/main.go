@@ -9,6 +9,7 @@ import (
 func changeTheValueOfAPointer(value *int) {
 	*value = 300
 	fmt.Printf("This pointer is of type %T\n", value)
+	return
 }
 
 // Indirectly modify parameter.
