@@ -29,9 +29,22 @@ type Option struct {
 // 	return a, b, c
 // }
 
-func variadicFuncWithOptionType(a int, b int, c ...Option{}) (a1 int, b1 int, c1 Option{}) {
-	// body
-	return a, b, c
+// func variadicFuncWithOptionType(a int, b int, c Option{}) (a1 int, b1 int, c1 Option{}) {
+// 	fmt.Printf("a: %v", a)
+// 	return a, b, c
+// }
+
+func a() {
+	i := 0
+	defer fmt.Println(i)
+	i++
+	return
+}
+
+func f() {
+	for i := 0; i < 5; i++ {
+		defer fmt.Printf("%d\n", i)
+	}
 }
 
 func main() {
@@ -40,10 +53,12 @@ func main() {
 	// var i1 int = MultiPly3Nums(3, 10, 8)
 	// fmt.Printf("Multiply 3 * 10 * 8 = %d\n", i1)
 
-	a, b, c, d := 2, 54, 64, 453
-	e := Option{name: "John Doe"}
+	// a, b, c, d := 2, 54, 64, 453
+	// e := Option{name: "John Doe"}
 	// r1, r2, r3 := variadicFunction(a, b, c, d)
-	v1, v2, v3 := variadicFuncWithOptionType(a, b, e)
+	// v1, v2, v3 := variadicFuncWithOptionType(a, b, e)
+	a()
+	f()
 	// fmt.Printf("Variadic Values: a = %d, b = %d, c = %v\n", r1, r2, r3)
-	fmt.Printf("Variadic option Values: a = %d, b = %d, c = %v\n", v1, v2, v3)
+	// fmt.Printf("Variadic option Values: a = %d, b = %d, c = %v\n", v1, v2, v3)
 }
