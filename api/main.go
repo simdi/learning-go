@@ -11,10 +11,20 @@ type Response struct {
 	Success bool `json:"success"`
 }
 
+type User struct {
+	Firstname string `json:"firstname"`
+	Lastname  string `json:"lastname"`
+}
+
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
 		resp.NewResponse(w).Ok(&Response{true})
+	})
+	mux.HandleFunc("/user", func(w http.ResponseWriter, req *http.Request) {
+		if true {
+			resp.NewResponse(w).Ok(&User{})
+		}
 	})
 
 	n := negroni.New()
