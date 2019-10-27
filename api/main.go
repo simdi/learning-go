@@ -23,7 +23,7 @@ func main() {
 	})
 	mux.HandleFunc("/user", func(w http.ResponseWriter, req *http.Request) {
 		if true {
-			resp.NewResponse(w).Ok(&User{})
+			resp.NewResponse(w).DefaultMessage().Unauthorized(nil)
 		}
 	})
 
