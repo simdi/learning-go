@@ -1,3 +1,5 @@
+github.com/go-ozzo/ozzo-validation v3.6.0+incompatible h1:msy24VGS42fKO9K1vLz82/GeYW1cILu7Nuuj1N3BBkE=
+github.com/go-ozzo/ozzo-validation v3.6.0+incompatible/go.mod h1:gsEKFIVnabGBt6mXmxK0MoFy+cZoTJY6mu5Ll3LVLBU=
 github.com/nicklaw5/go-respond v0.0.0-20190722175312-54f5cd3d2246 h1:ESHjIUavN4b2za7dtb445z5zuGRR8shYhQGeVxbF/eI=
 github.com/nicklaw5/go-respond v0.0.0-20190722175312-54f5cd3d2246/go.mod h1:VoIe3N+7d/nBCnc0Pzv5ty0k5S755kcwK1RBNF4UJ/g=
 github.com/urfave/negroni v1.0.0 h1:kIimOitoypq34K7TG7DUaJ9kq/N4Ofuwi1sjz0KipXc=
