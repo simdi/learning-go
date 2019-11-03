@@ -20,8 +20,6 @@ func (st *Stack) Pop() int {
 
 // Multipy numbers passed as parameters
 func MultiPly3Nums(a int, b int, c int) int {
-	// var product int = a * b * c
-	// return product
 	return a * b * c
 }
 
